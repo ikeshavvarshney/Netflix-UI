@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-image: url('assets/bg.jpg');
+    background-position: center center;
+    background-size: max(1000px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.layer1 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.layer2 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(225deg,
+            rgb(0, 0, 0) 0.000%,
+            rgba(0, 0, 0, 0.5) 50.0%,
+            rgb(0, 0, 0) 100.0%);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    width: 75.5vw;
+    height: 16vh;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+}
+
+#lang {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 6px 25px 6px 35px;
+    color: white;
+    font-weight: 500;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.signin {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
