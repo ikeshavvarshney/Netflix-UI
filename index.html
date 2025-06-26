@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="layer1"></div>
@@ -17,14 +20,26 @@
                 </span>
                 <div class="nav">
                     <label for="lang"></label>
-                    <select name="lang" id="lang">
+                    <select name="lang" id="language" class="lang">
                         <option value="English">English</option>
                         <option value="Hindi">Hindi</option>
                     </select>
                     <button class="signin">Sign In</button>
                 </div>
             </nav>
+            <div class="desc">
+                <div class="l1">Unlimited movies, TV shows and more</div>
+                <div class="l2">Starts at ₹149. Cancel at any time.</div>
+                <div class="l3">Ready to watch? Enter your email to create or restart your membership</div>
+                <div class="email">
+                    <label for="email"></label>
+                    <input type="email" class="emailinp" placeholder="Email address">
+                    <button>Get Started <img src="assets/right-arrow.svg" alt="" height="30"> </button>
+                </div>
+            </div>
+        </div>
+        <div class="seperation">
+            <div class="seplayer1"></div>
+            <div class="seplayer2"></div>
         </div>
     </header>
-</body>
-</html>

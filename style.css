@@ -15,7 +15,6 @@ header {
     background-size: max(1000px, 100vw);
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
 }
 
 .layer1 {
@@ -62,7 +61,7 @@ nav {
     gap: 12px;
 }
 
-#lang {
+.lang {
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.35);
     padding: 6px 25px 6px 35px;
@@ -80,4 +79,124 @@ nav {
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 8vw;
+    gap: 15px;
+}
+
+.desc div {
+    text-align: center;
+}
+
+.desc .l1 {
+    width: 60vw;
+    font-size: 53px;
+    font-weight: 900;
+}
+
+.desc .l2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.desc .l3 {
+    padding: 20px 0 0 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.email {
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.emailinp {
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    width: calc(100% - 500px);
+    height: 55px;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+
+.emailinp::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.emailinp:focus {
+    outline: 1px solid white;
+    outline-offset: 2px;
+    position: relative;
+    padding-top: 5px;
+    height: 45px;
+}
+
+.emailinp:focus::placeholder {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.email button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    padding: 10px 20px 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.seperation {
+    position: relative;
+    height: 60px;
+}
+
+.seplayer1,
+.seplayer2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.seplayer1 {
+    z-index: 1;
+    border-top-left-radius: 60% 100%;
+    border-top-right-radius: 60% 100%;
+    border-bottom: none;
+    background: linear-gradient(to right,
+            rgba(33, 13, 22, 1) 10%,
+            rgba(184, 40, 105, 1),
+            rgb(255, 0, 13),
+            rgba(184, 40, 105, 1),
+            rgba(33, 13, 22, 1) 90%);
+}
+
+.seplayer2 {
+    z-index: 2;
+    border-top: solid 4px transparent;
+    border-top-left-radius: 60% 95%;
+    border-top-right-radius: 60% 95%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    background-clip: padding-box;
 }
