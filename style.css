@@ -259,3 +259,44 @@ nav {
 .poster5 {
     background-image: url("https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWtQdcUd4n6VKz6HTm_IbI2cOq0VDU7fDQpomIXBLuCYqtJ4j8hj2pz7j6spnX2osjRgTMJQ9xkMieYZWqC6xC8G4tGlTLJBm3I.webp?r=cc2");
 }
+.mrtj {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75vw;
+    margin: 50px auto;
+}
+.mrtj h2 {
+    width: 75vw;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    width: 75vw;
+    height: 291px;
+}
+
+.card {
+    height: 100%;
+    width: 20.5%;
+    background: linear-gradient(149deg,
+            #192247 0%,
+            #210e17 96.86%);
+    border-radius: 15px;
+    padding: 25px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card img {
+    height: 25%;
+    margin: auto 0 0 auto;
+}
+.card h2{
+    max-width: 100%;
+}
+.card p {
+    color: lightgray;
+    max-width: 100%;
+}
