@@ -21,7 +21,7 @@ body {
 .layer1 {
     position: absolute;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.4;
     top: 0;
     left: 0;
     height: 100%;
@@ -32,14 +32,32 @@ body {
 .layer2 {
     position: absolute;
     z-index: 0;
-    opacity: 0.7;
+    opacity: 0.8;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background: linear-gradient(225deg,
             rgb(0, 0, 0) 0.000%,
-            rgba(0, 0, 0, 0.5) 50.0%,
+            rgba(0, 0, 0, 0.4) 30.0%,
+            rgba(0, 0, 0, 0.4) 70.0%,
+            rgb(0, 0, 0) 100.0%);
+}
+
+.layer3 {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg,
+            rgb(0, 0, 0) 0.000%,
+            rgba(0, 0, 0, 0.1) 10.0%,
+            rgba(0, 0, 0, 0.5) 40.0%,
+            rgba(0, 0, 0, 0.6) 60.0%,
+            rgba(0, 0, 0, 0.4) 75.0%,
             rgb(0, 0, 0) 100.0%);
 }
 
@@ -114,7 +132,6 @@ nav {
 }
 
 .email {
-    width: 835px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -123,7 +140,7 @@ nav {
 .emailinp {
     background: rgba(0, 0, 0, 0.35);
     color: white;
-    width: calc(100% - 500px);
+    width: 335px;
     height: 55px;
     border-radius: 4px;
     padding: 0 15px;
@@ -287,21 +304,21 @@ main {
 }
 
 .card img {
-    height: 25%;
+    height: 75px;
     margin: auto 0 0 auto;
 }
 
 .card p {
-    color: lightgray;
+    color: rgba(255, 255, 255, 0.7);
     max-width: 100%;
 }
 
 
 .faq {
-    margin: 75px 0;
+    margin: 70px 0;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 18px;
 }
 
 .faq-container {

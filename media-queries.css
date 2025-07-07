@@ -1,0 +1,91 @@
+@media screen and (max-width:1280px) {
+    nav {
+        width: 87.5vw;
+        height: 85px;
+    }
+
+    .header {
+        background-size: cover;
+    }
+
+    .desc {
+        padding: 130px 0 180px 0;
+        gap: 9px;
+    }
+
+    .desc .l1 {
+        font-weight: 790;
+        font-size: 40px;
+        width: 450px;
+    }
+
+    .desc .l2 {
+        font-weight: 500;
+        font-size: 17px;
+        width: 450px;
+    }
+
+    .desc .l3 {
+        padding: 15px 0 0 0;
+        font-weight: 400;
+        font-size: 16px;
+        width: 450px;
+        line-height: 25px;
+    }
+
+    .email {
+        padding: 5px 0 0 0;
+    }
+
+    .emailinp {
+        width: 300px;
+    }
+
+    .email button {
+        width: 170px;
+        font-size: 15.5px;
+    }
+
+    main {
+        padding: 0 80px;
+    }
+
+    .trendbtn {
+        width: 170px;
+        height: 230px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        height: auto;
+    }
+
+    .card {
+        width: auto;
+        height: 150px;
+        padding: 25px;
+        position: relative;
+    }
+
+    .card img {
+        position: absolute;
+        bottom: 15px;
+        right: 8px;
+    }
+
+    .card h2 {
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .emailinp2 {
+        width: 450px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 17px;
+    }
+}
