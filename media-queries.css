@@ -1,6 +1,7 @@
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1279.9px) {
     nav {
-        width: 87.5vw;
+        margin: 0 80px;
+        width: calc(100% - 160px);
         height: 85px;
     }
 
@@ -87,5 +88,114 @@
     .footer-links {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 17px;
+    }
+}
+
+@media screen and (max-width: 959.9px) {
+    nav {
+        margin: 0 32px;
+        width: calc(100% - 64px);
+        height: 85px;
+    }
+
+    nav img {
+        height: 24px;
+    }
+
+    .desc {
+        padding: 95px 0 140px 0;
+    }
+
+    .desc .l1 {
+        font-size: 32px;
+        width: 450px;
+    }
+
+    .desc .l3 {
+        padding: 10px 0 0 0;
+    }
+
+    .emailinp {
+        width: 220px;
+    }
+
+    .email button {
+        width: 180px;
+        font-size: 17px;
+    }
+
+    main {
+        padding: 0 32px;
+    }
+
+    .main-item h2 {
+        font-size: 18px;
+    }
+
+    .trendbtn {
+        width: 120px;
+        height: 170px;
+    }
+
+    .mrtj {
+        gap: 12px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .card {
+        height: 120px;
+        padding: 25px 15px;
+        gap: 10px;
+    }
+
+    .card img {
+        height: 63px;
+        bottom: 8px;
+        right: 5px;
+    }
+
+    .faq-item {
+        height: 70px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .faq-item img {
+        height: 25px;
+    }
+
+    .email2 {
+        width: 100%;
+    }
+
+    .emailinp2 {
+        width: 100%;
+    }
+
+    .email2 button {
+        width: 225px;
+        font-size: 17px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 599.9px) {
+    nav {
+        margin: 0 24px;
+        width: calc(100% - 48px);
+        height: 85px;
+    }
+
+    nav img {
+        height: 24px;
     }
 }

@@ -68,8 +68,9 @@ body {
 
 nav {
     display: flex;
-    width: 79vw;
-    height: 95px;
+    margin: 0 148px;
+    width: calc(100% - 296px);
+    height: 92px;
     align-items: center;
     justify-content: space-between;
     margin: auto;
@@ -106,7 +107,7 @@ nav {
     flex-direction: column;
     color: white;
     align-items: center;
-    padding: 210px 0px 50px 0;
+    padding: 91px 0;
     gap: 15px;
 }
 
@@ -186,6 +187,7 @@ nav {
 .seperation {
     position: relative;
     height: 60px;
+    width: 100%;
 }
 
 .seplayer1,
