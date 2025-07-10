@@ -22,11 +22,15 @@
                         <img height="40px" src="assets/logo.svg" alt="logo">
                     </span>
                     <div class="nav">
-                        <label for="lang"></label>
-                        <select name="lang" id="language" class="lang">
-                            <option value="English">English</option>
-                            <option value="Hindi">Hindi</option>
-                        </select>
+                        <div class="select-lang">
+                            <img height="15px" src="Assets/translate.svg" class="translate" alt="">
+                            <img src="Assets/dropdown.svg" height="15px" alt="" class="dropdown">
+                            <label for="lang"></label>
+                            <select name="lang" id="language" class="lang">
+                                <option value="English" selected>English</option>
+                                <option value="Hindi">हिंदी</option>
+                            </select>
+                        </div>
                         <button class="signin">Sign In</button>
                     </div>
                 </nav>
@@ -140,16 +144,21 @@
                 <a href="#">Legal Notices</a>
                 <a href="#">Only on Netflix</a>
             </div>
-            <div>
-                <select name="lang" id="language" class="lang">
-                    <option value="English">English</option>
-                    <option value="Hindi">Hindi</option>
+            <div class="select-lang footer-lang">
+                <img height="15px" src="Assets/translate.svg" class="translate" alt="">
+                <img src="Assets/dropdown.svg" height="15px" alt="" class="dropdown">
+                <label for="lang"></label>
+                <select name="lang" id="language2" class="lang">
+                    <option value="English" selected>English</option>
+                    <option value="Hindi">हिंदी</option>
                 </select>
             </div>
             <div class="footer-country">Netflix India</div>
             <div class="captcha">
-                <span>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href='#'>Learn
-                        more.</a></span>
+                <div>
+                    <span>This page is protected by Google reCAPTCHA to ensure you're not a bot.</span>
+                    <a href='#'>Learn more.</a>
+                </div>
             </div>
         </section>
     </main>
@@ -159,6 +168,8 @@
             <span class="contact">Designed@Keshav</span>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

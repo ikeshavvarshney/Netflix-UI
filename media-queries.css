@@ -149,7 +149,7 @@
 
     .card {
         height: 120px;
-        padding: 25px 15px;
+        padding: 25px 15px 55px 15px;
         gap: 10px;
     }
 
@@ -160,7 +160,6 @@
     }
 
     .faq-item {
-        height: 70px;
         font-size: 18px;
         font-weight: 100;
     }
@@ -198,4 +197,65 @@
     nav img {
         height: 24px;
     }
+
+    #language {
+        width: 0px;
+        padding: 6.5px 30px;
+    }
+
+    .desc {
+        padding: 80px 32px 130px 32px;
+    }
+
+    .desc .l1,
+    .desc .l3 {
+        width: 100%;
+    }
+
+    .desc .l3 {
+        padding: 5px 0 0 0;
+    }
+
+    .email {
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .emailinp {
+        width: calc(100% - 31px);
+        height: 46px;
+    }
+
+    .email button {
+        margin: 11px 0 0 0;
+        height: 46px;
+        width: 160px;
+        padding: 0 0 0 15px;
+    }
+
+    main {
+        padding: 0 24px;
+    }
+
+    .posters {
+        gap: 10px;
+    }
+
+    .trendbtn {
+        width: 140px;
+        height: 160px;
+    }
+
+    .emailagain,
+    .email2 {
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+
 }
