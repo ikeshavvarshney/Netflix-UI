@@ -50,12 +50,20 @@
     main {
         padding: 0 80px;
     }
-
-    .trendbtn {
-        width: 170px;
-        height: 230px;
+    .posters-container{
+        height: 240px;
     }
-
+    .poster{
+        width: 140px;
+        height: 195px;
+    }
+    .posters:hover{
+        height: 210px;
+    }
+    .poster span{
+        font-size: 80px;
+        line-height: 80px;
+    }
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -132,9 +140,23 @@
         font-size: 18px;
     }
 
-    .trendbtn {
-        width: 120px;
+    .posters-container{
+        height: 190px;
+    }
+    .posters{
+        padding: 5px 10px;
+    }
+    .poster{
+        width: 115px;
+        height: 160px;
+    }
+    .posters:hover{
         height: 170px;
+    }
+    .poster span{
+        font-size: 64px;
+        line-height: 64px;
+        left: -10px;
     }
 
     .mrtj {
@@ -239,16 +261,7 @@
     main {
         padding: 0 24px;
     }
-
-    .posters {
-        gap: 10px;
-    }
-
-    .trendbtn {
-        width: 140px;
-        height: 160px;
-    }
-
+    
     .emailagain,
     .email2 {
         align-items: flex-start;

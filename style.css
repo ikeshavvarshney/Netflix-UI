@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    scrollbar-color: #1a1a1a #000000;
 }
 
 body {
     background-color: black;
     color: white;
     overflow-x: hidden;
+    position: relative;
+    z-index: 0;
 }
 
 .header {
@@ -195,7 +198,7 @@ nav {
     outline-offset: 2px;
     position: relative;
     padding-top: 5px;
-    height: 45px;
+    height: 50px;
 }
 
 .emailinp:focus::placeholder {
@@ -273,47 +276,87 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0 0 64px 0;
+    margin: 0 0 30px 0;
+}
+
+.posters-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 305px;
 }
 
 .posters {
-    display: flex;
-    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+    flex: 0 0 auto;
+    position: relative;
+    padding: 8px 22px;
 }
 
-.trendbtn {
-    border: none;
-    cursor: pointer;
-    scale: 0.9 0.9;
+.posters:hover {
+    scale: 1.05 1.05;
+    transition: all 0.3s ease-in-out;
+    height: 265px;
+}
+
+.poster {
     background-size: 100% 100%;
     border-radius: 10px;
-    height: 276px;
-    width: 225px;
+    height: 250px;
+    width: 180px;
+    position: relative;
 }
 
-.trendbtn:hover {
-    scale: 0.95 0.95;
-    transition: all 0.2s ease-in-out;
+.poster span {
+    position: absolute;
+    bottom: 5px;
+    left: -20px;
+    color: black;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 120px;
+    -webkit-text-stroke: 2px rgb(210, 210, 210);
 }
 
 .poster1 {
-    background-image: url("https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYUCgDPIk4LvnEw_j-dC5ca65oxm4yP2Z7RFKlRcN6WYzCwNA4MhTNqTRrSAK9zND3cSjrYEpbQculmTCXPD09ZbvdCosdbuOjc.webp?r=062");
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaW57jWqw0Gs9gqgmW816THwyNfPqphIiruQRFy9KXtt9PTPJpB4kzDKriPcpNjPKCj0itu1Yfjl-CR8rGEokBHPKE4O9lZQHXHRRpUHEelwoKk8lOf4gqlws-HnR2iZeSk4.webp?r=609");
 }
 
 .poster2 {
-    background-image: url("https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYGL4_ns5MGTE5-Yd3ZQVB5apyY9yxQ39lxjT_27ehdoGzrxRwNc4osgXEeifcv9yO_MgMySL-p6hMxtQZnIEkZmyglIJ7wm7ik.webp?r=c23");
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABU73BvQjJgydQFEJ-vZZw9QtO8fL6lIxc71x9tOqxgDWh_BHokCWPIbGC5AxJjDk0D_sIH5KhmmYm9HLr3DKUXg8eo6nzF0rtSI.webp?r=d95");
 }
 
 .poster3 {
-    background-image: url("https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ2Btia34ViHOdbGThR2xD0XYVD9vkdTkUULeET8PcHeq12ebMOJyLaTD1yS26NaRfUqDMknk2XnomOCg78WEKeN3VEDdOKzFRayBGveEZ-MeOaVD-v0z5P25idICKgt-nXX.webp?r=a1c");
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcxYDMjUvSJ3nAryjqs0uoAo7oXp0DFAQhDL_HZwL47A6EbYkAy942pqlMP0YJlIW1kbNU2mspfJYDwrMg21vkhWMicgpCeykDgVDtTl91myV24RIx42qMwWu3qIdvWaUDBB.webp?r=43d");
 }
 
 .poster4 {
-    background-image: url("https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYVcRfFB91jy3f8-_Alb6H4RUzqXFRA7ejjOfCOXF20XLRVeCyT3ZFEimKbZAimt2ayVUWXSnp6ApNxpoK0mA3XzJD__irrDkdMD6lDrOFPSvQqP8s0xn2dNBaU9JxIu4lUd.webp?r=63b");
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVVzJ7Q5ewWWr7Ju9Vpu5gUq1Guy_hTrvChxJceb-sKqWPiIs1YGHsy_iC2mNT5bKs2BepshCHriwd7IQhYM2HPuqd7MBfqMXFL8nXJshtQEi6-KAKZAcSvG7xE3daK4ABuC.webp?r=81a");
 }
 
 .poster5 {
-    background-image: url("https://occ-0-3752-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWtQdcUd4n6VKz6HTm_IbI2cOq0VDU7fDQpomIXBLuCYqtJ4j8hj2pz7j6spnX2osjRgTMJQ9xkMieYZWqC6xC8G4tGlTLJBm3I.webp?r=cc2");
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYGL4_ns5MGTE5-Yd3ZQVB5apyY9yxQ39lxjT_27ehdoGzrxRwNc4osgXEeifcv9yO_MgMySL-p6hMxtQZnIEkZmyglIJ7wm7ik.webp?r=c23");
+}
+
+.poster6 {
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcH5_XDKPeXszDIKUeRk9f8gbZf2IIH_vdf4CNwOb7kql21x-tuHFIQn1NVGFCzD79WrtEa2YEWqbSqJAs8AAOymvo6mcwfQlFM.webp?r=e74");
+}
+
+.poster7 {
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYUCgDPIk4LvnEw_j-dC5ca65oxm4yP2Z7RFKlRcN6WYzCwNA4MhTNqTRrSAK9zND3cSjrYEpbQculmTCXPD09ZbvdCosdbuOjc.webp?r=062");
+}
+
+.poster8 {
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWtQdcUd4n6VKz6HTm_IbI2cOq0VDU7fDQpomIXBLuCYqtJ4j8hj2pz7j6spnX2osjRgTMJQ9xkMieYZWqC6xC8G4tGlTLJBm3I.webp?r=cc2");
+}
+
+.poster9 {
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ2Btia34ViHOdbGThR2xD0XYVD9vkdTkUULeET8PcHeq12ebMOJyLaTD1yS26NaRfUqDMknk2XnomOCg78WEKeN3VEDdOKzFRayBGveEZ-MeOaVD-v0z5P25idICKgt-nXX.webp?r=a1c");
+}
+
+.poster10 {
+    background-image: url("https://occ-0-2484-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZFBdXweIqorvQIPkQbuKg9rFcZJJ8yCUzSX1ySYOsmrcMeUgLlY3YWvFcXee7lFjHwMT_Ofd03ttH-rTzAHPZskA6K-f4imBAY.webp?r=81d");
 }
 
 .mrtj {
